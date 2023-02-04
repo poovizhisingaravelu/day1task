@@ -1,0 +1,61 @@
+1.Diffrence between http1 and http2;
+HTTP 1 Protocol
+• HTTP methods are Get, Put or Post.
+• Request target such as URL or port is used.
+• It uses text based commands for HTTP requests.
+• It had official recognition in 1996.
+• The new response headers allowed multiple file types e.g. plain text, HTML, images etc.
+• It uses text based commands for HTTP requests.
+• It added many performance enhancements e.g. caching, request pipelining, keepalive connections, transfer encoding, byte range requests etc.
+• It can load one requests at a time. Hence one request per one TCP connection is possible.
+HTTP 2 Protocol
+• It was released in Feb. 2015 by IETF.
+• It is binary and not textual.
+• It is fully multiplexed.
+• It interleaves multiple requests/responses in parallel without blocking on anyone.
+• It uses single TCP connection to deliver multiple requests/responses (in parallel).
+
+
+2.Write a blog about objects and its internal representation in Javascript.
+
+*object easier to access all data.
+*An object is a key value pair structure.
+*objects, in JavaScript, are the most important data type and form the building blocks for modern JavaScript. 
+*These objects are quite different from JavaScript’s primitive data types (Number, String, Boolean, null, undefined, and symbol)
+Object creation
+syntax::
+  var objectname={key:value);
+example:
+
+ var student=(name:"poovizhi",dept:"IT",stuid:31};
+Accessiblity of object
+   Method:01(dot method)
+    syntax::
+      objectname.keyname;
+    example:
+       console.log(student.name);
+   Method:02(box method)
+       *the key must be in double quotes
+       syntax::
+         objectname["keyname"];
+       example:
+           console.log(student["name"]);
+Add new key value in object
+    syntax::
+      objectname.keyname=value;
+    example:
+        student.gender="female";
+Update object
+   syntax::
+ objectname.keyname=value;
+    example:
+        student.id=05;
+Delete object
+  syntax::
+     delete objectname.keyname;
+   example:
+       delete student.gender;
+
+     
+
+  
